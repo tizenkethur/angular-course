@@ -36,4 +36,8 @@ export class CourseCardComponent implements OnInit {
     //   beginner: this.course.category === "BEGINNER",
     // };
   }
+
+  cardStyles() {
+    return { 'background-image': 'url(' + this.course.iconUrl +') '}
+  }
 }
