@@ -13,6 +13,6 @@ export class AppComponent {
   ngrxCourse = COURSES[2];
 
   onCourseSelected(course: Course) {
-    console.log("card clicked"), course;
+    console.log("card clicked", course);
   }
 }
