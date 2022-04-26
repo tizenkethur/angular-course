@@ -7,15 +7,8 @@
 
 <div class="courses">
   <course-card
+    *ngFor="let courses of courses"
     (courseSelected)="onCourseSelected($event)"
-    [course]="coreCourse"
-  ></course-card>
-  <course-card
-    (courseSelected)="onCourseSelected($event)"
-    [course]="rxjsCourse"
-  ></course-card>
-  <course-card
-    (courseSelected)="onCourseSelected($event)"
-    [course]="ngrxCourse"
+    [course]="courses"
   ></course-card>
 </div>
