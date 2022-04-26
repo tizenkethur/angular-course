@@ -27,4 +27,13 @@ export class CourseCardComponent implements OnInit {
     console.log("button clicked");
     this.courseSelected.emit(this.course);
   }
+
+  cardClasses() {
+    if (this.course.category === "BEGINNER") {
+      return ["beginner"];
+    }
+    // return {
+    //   beginner: this.course.category === "BEGINNER",
+    // };
+  }
 }
